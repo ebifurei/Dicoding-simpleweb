@@ -1,0 +1,392 @@
+h1,h2,h3,h4{
+	padding:0 0;
+	margin:0 0;
+}
+p{
+	padding:0 0;
+	margin:0 0;
+}
+ul{
+	padding:0 0;
+	margin:0 0;	
+}
+body{
+	padding:0 0;
+	margin:0 0; 
+	font-family: 'Open Sans', sans-serif;
+}
+main{
+	overflow:auto;
+}
+
+.header{
+	background: url("https://images.unsplash.com/photo-1495878330842-2ed73e5155bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center top;
+	background-size: cover;
+	background-position: center;
+	background-size:cover;
+	min-height: 500px;
+}
+.header-top {
+	padding-top: 3em;
+}
+.logo{
+	float:left;
+	padding-left:30px;
+	
+}
+.top-menu{
+	float:right;
+	padding-right:20px;
+}
+.top-menu ul li{
+	display: inline-block;
+	padding: 5px 15px 0px 15px;
+}
+.top-menu ul li a{
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+/* Effect 5: same word slide in */
+.effect-1 a {
+	overflow: hidden;
+}
+
+.effect-1 a span {
+	position: relative;
+	display: inline-block;
+	transition: transform 0.3s;
+}
+
+.effect-1 a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	transform: translate3d(0,0,0);
+}
+
+.effect-1 a:hover span,
+.effect-1 a:focus span {
+	transform: translateY(-100%);
+}
+ /***** Slider *****/
+
+.banner {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	display:block;
+}
+.banner-wrap {
+	padding-top: 20em;
+}
+/* Default Skin */
+.banner_center {
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	text-align: center;
+
+}
+.banner_center h1 {
+	color: #eee;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-size: 2.4em;
+}
+.banner_center h2 {
+	color: #eee;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-size: 2.4em;
+	padding:7px 0;
+}
+.banner_center h2 span
+{
+	color: #ef664d;
+	font-weight: 900;
+}
+
+.about-section {
+	padding:3em 0;
+	overflow:auto;
+}
+.about {
+	text-align: center;
+}
+.about h3 {
+	font-size: 2.5em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #2a404e;
+}
+.about h3 span {
+	color: #ef664d;;
+
+}
+.about-imag {
+	float: center;
+	width:100%;
+}
+.about-imag img {
+	border: 2px solid #ef664d;
+	border-radius: 103px;
+	width:250px;
+	float:below;
+}
+.about-text {
+	float: center;
+	width: 100%;
+	margin-top:3%; 
+}
+.about-text p {
+	float:right;
+	font-size: 25px;
+	color: #7e7e7e;
+	line-height: 1.5em;
+}
+
+.quotes-section{
+	padding:3em 0;
+	background:#2e3e4e;
+	
+}
+.quotes-header{
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+.quotes-header h1
+{
+	font-size: 2.5em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #ef664d;
+}
+.thequote h2 {
+	padding-top: 3em;
+	color: #eee;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding:7px 0;
+}
+.thequote h2 span
+{
+	color: #ef664d;
+	font-weight: 900;
+}
+
+.ex-section{
+	padding:3em 0;
+}
+.ex-header{
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+
+}
+.ex-header h3
+{
+	font-size: 2.5em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #2a404e;
+}
+.ex-header h3 span {
+	color: #F0C514;
+}
+.ex-header p{
+	line-height: 1.5em;
+	font-size: 15px;
+	color: #7e7e7e;
+	padding: 25px 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}	
+.ex-sectiongrids {
+	text-align: center;
+}
+
+.ex-grid h4 {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 15px 0;
+	color: #2a404e;
+	text-transform: uppercase;
+}
+.ex-grid p {
+	font-size: 15px;
+	color: #7e7e7e;
+	padding: 0 22px;
+}
+.aside-section {
+	padding: 40px 0px;
+	background: #2e3e4e;
+}
+.contact-header {
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+.contact-header h3 {
+	font-size: 2.5em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #ef664d;
+}
+.contact-header h3 span {
+color: #fefefe;
+}
+.contact-header p {
+	line-height: 1.5em;
+	font-size: 15px;
+	color: #fefefe;
+	padding: 25px 0;
+}
+.social-icon {
+text-align: center;
+padding:30px 0;
+}
+
+.social-icon i{
+	width:40px;
+	height:40px;
+	background: url("../images/img-sprite.png") no-repeat 0px 0px;
+	display:inline-block;
+}
+.social-icon i:hover{
+    transition:0.5s all;
+}
+.social-icon a i.icon1{
+	background-position:0px 0px;
+}
+.social-icon a i.icon1:hover{
+	background-position:0px -40px;
+}
+.social-icon a i.icon2{
+	background-position:-40px 0px;
+}
+.social-icon a i.icon2:hover{
+	background-position:-40px -40px;
+}
+.social-icon a i.icon3{
+	background-position:-80px 0px;
+}
+.social-icon a i.icon3:hover{
+	background-position:-80px -40px;
+}
+.social-icon i.icon4{
+	background-position:-120px 0px;
+}
+.social-icon a i.icon4:hover{
+	background-position:-120px -40px;
+}
+.social-icon i.icon5{
+	background-position:-160px 0px;
+}
+.social-icon a i.icon5:hover{
+	background-position:-160px -40px;
+}
+.social-icon i.icon6{
+	background-position:-200px 0px;
+}
+.social-icon a i.icon6:hover{
+	background-position:-200px -40px;
+}
+.social-icon i.icon7{
+	background-position:-240px 0px;
+}
+.social-icon a i.icon7:hover{
+	background-position:-240px -40px;
+}
+.social-icon i.icon8{
+	background-position:-280px 0px;
+}
+.social-icon a i.icon8:hover{
+	background-position:-280px -40px;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   overflow:auto;
+   background-color: #2e3e4e
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
+/* grid without bootsrap */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.col-xs-12 {
+  grid-column: span 12
+}
+
+@media (min-width: 768px) {
+
+  .col-sm-4 {
+    grid-column: span 4
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    grid-column: span 4
+  }
+
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Site</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<header>
+	<div class="header" id="head">
+		<div class="container">
+        <div class="header-top">
+      		 <div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			 </div>
+			<div class="top-menu">
+		   	<span class="menu"></span>
+			<ul>
+			 	<nav class="effect-1">
+				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+				<li><a href="#quotes" class="scroll"><span data-hover="quotes"><span>quotes</span></a></li>
+				<li><a href="#experience" class="scroll"><span data-hover="experience">Experience</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+				</nav>
+			</ul>
+			</div>
+			<script> src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+				  // Prevent default anchor click behavior
+				  event.preventDefault();
+
+				  // Store hash
+				  var hash = this.hash;
+
+				  // Using jQuery's animate() method to add smooth page scroll
+				  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				  $('html, body').animate({
+					scrollTop: $(hash).offset().top
+				  }, 800, function(){
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				  });
+				} 
+			  });
+			});
+			</script>
+		</div>
+	<div class="banner">
+				<article> 
+				   	<div class="banner-wrap">
+						<div class="banner_center">
+				   		 	<h1>Hello World,</h1> 
+				   		 	<h2>Welcome I'm <span> Aldian </span></h2>
+				   		 	<h2>This is <span>My First website</span></h2>
+				   		 </div>
+				   	</div>
+				</article>
+	</div>
+	</div>
+	</div>
+</header>
+<main>
+	<div class="content">
+		<div class="about-section" id="about">
+			<div class="container">
+			<div class="about">
+					<h3>about me</h3>
+					<div class="about-imag">
+					<img src="images/pic-9.jpg" alt=""/>
+					</div>
+					<article class="about-text">
+							<p>Hi, I'm Aldiansyah Triewicaksono I love to expand my knowledge about techonology especially IoT. As right now i'm a Bachelor Student at University Gadjah Mada. I'm Majoring Electical Engineering, eventhough my major is electrical engineering i love to create something new.</p> 
+					</article>
+			</div>
+		    </div>
+		</div>
+		<!-- end about -->
+		<div class="quotes-section" id="quotes">
+			<div class="quotes-header">
+				<h1>Favorite Quote</h1>
+			</div>
+			<div class="thequote" align=center>
+				<h2> “<span>Live</span> as if you were to <span>die tomorrow</span>.</h2> 
+				<h2><span>Learn </span>as if you were to <span>live forever.</span>”<h2>
+			</div>
+		</div>
+		<!-- end quotes -->
+		<div class="ex-section" id="experience">
+			<div class="container"> 
+			<div class="ex-header">
+				<h3>Experience</h3>
+				<p> This is a little bit of my experience </p>
+			</div>
+			<div class="row container ex-sectiongrids">
+				<div class="col-xs-12 col-md-4 ex-grid">
+					<img src="images/img1.png" alt=""/>
+					<h4>webdesign</h4>
+					<p>eventho i'm newbie I still have some experience in web designing</p>
+				</div>
+				<div class="col-xs-12 col-md-4 ex-grid">
+					<img src="images/img2.png" alt=""/>
+					<h4>Product Modeling</h4>
+					<p>My experience in using AutoCad is medium level.</p>
+				</div>
+				<div class="col-xs-12 col-md-4 ex-grid">
+					<img src="images/img3.png" alt=""/>
+					<h4>web development</h4>
+					<p>I have a little bit experience in using HTML, CSS. and JavaScript.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- end experience -->
+<aside>
+		<!-- all of it isn't linked yet -->
+		<div class="aside-section" id="contact">
+			<div class="container"> 
+			<div class="contact-header">
+				<h3> contact</h3>
+				<p> You can find me there </p>
+			</div>
+			<div class="social-icon">
+				<a href="#"><i class="icon1"></i></a>
+				<a href="#"><i class="icon2"></i></a>
+				<a href="#"><i class="icon3"></i></a>
+				<a href="#"><i class="icon4"></i></a>
+				<a href="#"><i class="icon5"></i></a>
+				<a href="#"><i class="icon6"></i></a>
+				<a href="#"><i class="icon7"></i></a>
+				<a href="#"><i class="icon8"></i></a>
+			</div>
+</aside>
+</main>
+<footer>
+       <p align=center >Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+</footer>		
+</body>
